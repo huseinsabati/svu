@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>SVUMovies</title>
+    <link rel="stylesheet" href="style.css">
+    <!--icon of website-->
+    <link rel="shortcut icon" href="tit.png">
+    <link type="text/css" rel="stylesheet" href="lightslider.css" />
+    <script src="JQuery3.3.1.js"></script>
+    <script src="lightslider.js"></script>
+    <!--using FontAwesome--------------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--navigation-------------->
+    <nav>
+        <!--logo--------------->
+        <a href="svumovies.html" class="logo">
+            <img src="logo.png"/>
+        </a>
+        <!--menu--btn----------------->
+        <input type="checkbox" class="menu-btn" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <!--menu-------------->
+        <ul class="menu">
+            <li><a href="svumovies.html"><strong>الصفحة الرئيسية</strong></a></li>
+            <li><a href="Movies.html"><strong> الأفلام</strong></a></li>
+            <li><a href="#mosharkin"><strong>المشاركين بالوظيفة</strong></a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+        <!--search------------->
+        <div class="search">
+            <input type="text" placeholder="ابحث عن فيلم او عن ممثل"/>
+            <!--search-icon----------->
+            <i class="fas fa-search"></i>
+        </div>
+    </nav>
+    <section id="main">
+        <!--showcase----------------------->
+        <!--heading------------->
+        <h1 class="showcase-heading"><strong>أفضل الأفلام</strong></h1>
+
+        <ul id="autoWidth" class="cs-hidden">
+
+        <!--box-1--------------------------->
+        <li class="item-a">
+            <!--showcase-box------------------->
+           <div class="showcase-box">
+               <a href="godfather.html"><img src="movie8.jpg"/></a>
+           </div>
+               </li>
+            <!--box-2--------------------------->
+            <li class="item-b">
+                <!--showcase-box------------------->
+               <div class="showcase-box">
+                  <a href="thedarkknight.html"> <img src="movie9.jpg"/> </a>
+               </div>
+                   </li>
+                <!--box-3--------------------------->
+            <li class="item-c">
+                <!--showcase-box------------------->
+               <div class="showcase-box">
+                   <a href="ApoclypseNow.html"><img src="movie10.jpg"/></a>
+               </div>
+                   </li>
+                <!--box-4--------------------------->
+            <li class="item-d">
+                <!--showcase-box------------------->
+               <div class="showcase-box">
+                   <a href="oneflewoverthecuckoo'snest.html"><img src="movie7.jpg"/></a>
+               </div>
+                   </li>
+                   <li class="item-e">
+                    <!--showcase-box------------------->
+                    <div class="showcase-box">
+                      <a href="TheShawshankRedemption.html"><img src="movie12.jpg"/></a>
+                   </div>
+                </li>
+          </ul>
+    </section>
+
+    <!--movies---------------------------->
+    <br>
+    <br>
+    <div class="movies-heading">
+        <h2><strong> <a href="Movies.html">جميع الأفلام</a>  </strong></h2>
+    </div>
+    <section id="movies-list">
+        <!--ToMovies----------------------->
+        <div class="ToMovies">
+            <div class="movies-img">
+                <a href="Movies.html"><img src="https://maxcdn.icons8.com/Share/icon/Arrows/left_squared1600.png" alt=""></a>
+            </div>
+        </div>
+         <!--box-4------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">Blu-Ray</div>
+                <img src="images/movie7.jpg">
+            </div>
+            <!--text--------->
+            <a href="oneflewoverthecuckoo'snest.html">
+                One Flew Over The Cuckoo's Nest (1975) Full Movie | Blu-Ray 1080p HD
+            </a>
+        </div>
+        <!--box-6------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">Blu-Ray</div>
+                <img src="movie13.jpg">
+            </div>
+            <!--text--------->
+            <a href="Dumb&Dumber.html">
+                Dumb and Dumber (1994) Full Movie | Blu-Ray 1080p <br> HD
+            </a>
+        </div>
+         <!--box-5------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">Blu-Ray</div>
+                <img src="movie12.jpg">
+            </div>
+            <!--text--------->
+            <a href="TheShawshankRedemption.html">
+                The Shawshank Redemption (1994) Full Movie | Blu-Ray 1080p HD
+            </a>
+        </div>
+    </section>
+    <!--section المشاركين-->
+    <section>
+        <div id="mosharkin">
+            <ul>
+                <li id="headmosh">
+                    <h1><strong>: المشاركين في الوظيفة </strong></h1>
+                </li>
+                <li>
+                    <h2><strong>ali_128742  >>>  front-end </strong></h2>
+                </li>
+                <li>
+                    <h2><strong>hosein_131374 >>> back-end </strong></h2>
+                </li>
+                <li>
+                    <h2><strong>abdo_150773 >>> <span>ali_128742</span>  التقرير + صفحة البطل بالمشاركة مع </strong></h2>
+                </li>
+                <li>
+                    <h2><strong>muhamad_128775 >>> hosting </strong></h2>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--footer------------------>
+    <script>
+        $(document).ready(function() {
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cS-hidden');
+        }
+    });
+  });
+    </script>
+</body>
+</html>
